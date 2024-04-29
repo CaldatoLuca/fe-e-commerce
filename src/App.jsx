@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import PageOne from "./pages/PageOne";
-import PageTwo from "./pages/PageTwo";
+import Search from "./pages/Search";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -13,8 +13,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/page-one" element={<PageOne />} />
-          <Route path="/page-two" element={<PageTwo />} />
+          <Route path="/search" element={<Search />} />
+
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
         <Footer />
       </Router>
