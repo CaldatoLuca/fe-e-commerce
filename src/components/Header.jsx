@@ -15,10 +15,10 @@ function Header() {
   };
 
   return (
-    <header className=" bg-neutral-100 py-4 text-neutral-800">
+    <header className="bg-neutral-100 py-4 text-neutral-800">
       <div className="container mx-auto px-5 md:px-0 flex flex-wrap justify-between items-center">
         {/* Logo */}
-        <Link to="/">
+        <Link to="/" onClick={() => setMobileSearch(false)}>
           {" "}
           <img
             src="/white-logo.png"
@@ -33,21 +33,27 @@ function Header() {
         <nav
           className={
             mobileSearch
-              ? "flex flex-col items-center gap-5 justify-center order-3 w-full md:block md:w-auto md:order-2"
-              : "hidden md:block md:w-auto md:order-2"
+              ? "flex flex-col items-center gap-5 justify-center order-3 w-full md:block md:w-auto md:order-2 "
+              : "hidden md:block md:w-auto md:order-2 "
           }
         >
           {/* Categorie */}
           <ul className="flex gap-5 text-xl text-neutral-800">
-            <li className="hover:underline">
+            <li className=" hover:text-emerald-600 transition">
               <Link to="/search" onClick={openMobileSearch}>
                 Donna
               </Link>
             </li>
-            <li className="hover:underline" onClick={openMobileSearch}>
+            <li
+              className=" hover:text-emerald-600 transition"
+              onClick={openMobileSearch}
+            >
               <Link to="/search">Uomo</Link>
             </li>
-            <li className="hover:underline" onClick={openMobileSearch}>
+            <li
+              className=" hover:text-emerald-600 transition"
+              onClick={openMobileSearch}
+            >
               <Link to="/search">Accessori</Link>
             </li>
           </ul>
