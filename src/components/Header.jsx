@@ -15,8 +15,8 @@ function Header() {
   };
 
   return (
-    <header className="bg-neutral-100 py-4 text-neutral-800  drop-shadow-2xl fixed-top ">
-      <div className="container mx-auto px-5 md:px-0 flex flex-wrap justify-between items-center">
+    <header className="bg-neutral-100 py-4 text-neutral-800  drop-shadow-2xl fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto px-5  flex flex-wrap justify-between items-center">
         {/* Logo */}
         <Link to="/" onClick={() => setMobileSearch(false)}>
           {" "}

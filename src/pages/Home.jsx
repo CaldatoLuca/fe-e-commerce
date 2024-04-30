@@ -68,6 +68,8 @@ function Home() {
       <Carousel
         sectionId="new-releases"
         title="Nuove Uscite"
+        description="Scopri di più"
+        url="/search"
         array={newReleases}
         dark={true}
       />

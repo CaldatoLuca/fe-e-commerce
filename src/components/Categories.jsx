@@ -1,14 +1,14 @@
-import manImg from "../assets/img/man.avif";
-import womanImg from "../assets/img/woman.avif";
-import accessories from "../assets/img/accessories.webp";
+import manImg from "../assets/img/man.jpg";
+import womanImg from "../assets/img/woman.jpg";
+import acc from "../assets/img/accessories.jpg";
 
 function Categories() {
   return (
     <section id="categories" className="py-10 text-neutral-700 bg-neutral-100">
-      <div className="container mx-auto">
-        <div className="flex gap-5">
+      <div className="container mx-auto px-5 ">
+        <div className="flex flex-col items-center justify-center md:flex-row md:items-start md:justify-start gap-5 ">
           {/* Uomo */}
-          <div className="flex-1 border w-1/3 relative">
+          <div className="w-full md:w-1/3 relative">
             <img src={manImg} alt="man" className=" img-fluid w-full h-full" />
             <button className="absolute font-medium bottom-5 left-5 bg-neutral-100 hover:bg-neutral-200 transition text-neutral-800 rounded-3xl px-4 py-2">
               Compra Uomo
@@ -16,7 +16,7 @@ function Categories() {
           </div>
 
           {/* Donna */}
-          <div className="flex-1 border w-1/3 relative">
+          <div className="w-full md:w-1/3 relative">
             <img
               src={womanImg}
               alt="woman"
@@ -29,9 +29,9 @@ function Categories() {
           </div>
 
           {/* Accessori */}
-          <div className="flex-1 border w-1/3 relative">
+          <div className="w-full md:w-1/3 relative">
             <img
-              src={accessories}
+              src={acc}
               alt="accessories"
               className=" img-fluid w-full h-full"
             />
