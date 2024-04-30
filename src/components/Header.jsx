@@ -37,27 +37,6 @@ function Header() {
               : "hidden md:block md:w-auto md:order-2 "
           }
         >
-          {/* Categorie */}
-          <ul className="flex gap-5 text-xl text-neutral-800">
-            <li className=" hover:text-emerald-600 transition">
-              <Link to="/search" onClick={openMobileSearch}>
-                Donna
-              </Link>
-            </li>
-            <li
-              className=" hover:text-emerald-600 transition"
-              onClick={openMobileSearch}
-            >
-              <Link to="/search">Uomo</Link>
-            </li>
-            <li
-              className=" hover:text-emerald-600 transition"
-              onClick={openMobileSearch}
-            >
-              <Link to="/search">Accessori</Link>
-            </li>
-          </ul>
-
           {/* Barra di ricerca */}
           <form
             action="/search"
