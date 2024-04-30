@@ -1,5 +1,11 @@
+import Jumbo from "../components/Jumbo";
+
 function Home() {
-  return <main>Home</main>;
+  return (
+    <main>
+      <Jumbo />
+    </main>
+  );
 }
 
 export default Home;
