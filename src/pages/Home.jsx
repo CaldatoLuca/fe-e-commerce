@@ -1,6 +1,7 @@
 import Jumbo from "../components/Jumbo";
 import Carousel from "../components/Carousel";
 import JumboImg from "../assets/img/jumbo.avif";
+import Categories from "../components/Categories";
 
 function Home() {
   const newReleases = [
@@ -63,6 +64,7 @@ function Home() {
   return (
     <main>
       <Jumbo />
+      <Categories />
       <Carousel
         sectionId="new-releases"
         title="Nuove Uscite"
