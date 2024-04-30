@@ -63,7 +63,7 @@ function Home() {
   ];
 
   return (
-    <main>
+    <main className="mt-36">
       <Jumbo />
       <Categories />
       <Carousel

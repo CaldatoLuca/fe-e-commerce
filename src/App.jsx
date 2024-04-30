@@ -5,12 +5,14 @@ import Search from "./pages/Search";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Partner from "./pages/Partner";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
+          {/* Home */}
           <Route
             path="/"
             element={
@@ -19,6 +21,7 @@ function App() {
               </>
             }
           />
+          {/* Ricerca */}
           <Route
             path="/search"
             element={
@@ -27,6 +30,16 @@ function App() {
               </>
             }
           />
+          {/* Partner */}
+          <Route
+            path="/partner"
+            element={
+              <>
+                <Header /> <Partner /> <Footer />
+              </>
+            }
+          />
+          {/* Login */}
           <Route path="/login" element={<Login />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>

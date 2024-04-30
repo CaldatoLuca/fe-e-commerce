@@ -5,7 +5,7 @@ function Jumbo() {
   return (
     <section
       id="home-jumbo"
-      className="py-10 bg-neutral-700 text-neutral-100 text-lg mt-36"
+      className="py-10 bg-neutral-700 text-neutral-100 text-lg "
     >
       <div className="container mx-auto px-5  flex flex-col md:flex-row items-center justify-between">
         {/* img */}
@@ -32,7 +32,11 @@ function Jumbo() {
                 type="emerald"
                 href="/search"
               />
-              <Button content="Diventa Partner" type="neutral-white" href="/" />
+              <Button
+                content="Diventa Partner"
+                type="neutral-white"
+                href="/partner"
+              />
             </div>
           </div>
         </div>
