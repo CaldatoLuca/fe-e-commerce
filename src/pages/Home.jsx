@@ -2,6 +2,7 @@ import Jumbo from "../components/Jumbo";
 import Carousel from "../components/Carousel";
 import JumboImg from "../assets/img/jumbo.avif";
 import Categories from "../components/Categories";
+import Newsletter from "../components/Newsletter";
 
 function Home() {
   const newReleases = [
@@ -73,6 +74,7 @@ function Home() {
         array={newReleases}
         dark={true}
       />
+      <Newsletter />
     </main>
   );
 }
