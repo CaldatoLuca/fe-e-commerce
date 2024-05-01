@@ -2,8 +2,8 @@ function Partner() {
   return (
     <main className="mt-36">
       <section id="partner" className=" bg-green-600 text-neutral-100">
-        <div className="container mx-auto px-5 py-28 flex gap-10 justify-between items-center">
-          <div className="w-1/2">
+        <div className="container text-center md:text-start mx-auto px-5 py-28 flex flex-col md:flex-row gap-10 justify-between items-center">
+          <div className="w-full  md:w-1/2">
             <h3 className="text-3xl font-bold mb-5">
               Diventa Partner GymWear Performance
             </h3>
@@ -81,7 +81,7 @@ function Partner() {
           </div>
 
           {/* Form */}
-          <div className="w-1/3 ">
+          <div className="w-full md:w-1/3 ">
             <p className="mb-10 text-center font-medium">
               Per diventare partner con Gymwear Performance, inviaci una email
               compilando il modulo sottostante. Saremo lieti di valutare la tua
@@ -95,11 +95,11 @@ function Partner() {
               className={`flex flex-col gap-5 `}
             >
               {/* Email */}
-              <label htmlFor="newsletter-email">Inserisci Email</label>
+              <label htmlFor="partner-email">Inserisci Email</label>
               <input
                 type="text"
                 name="email"
-                id="newsletter-email"
+                id="partner-email"
                 className="p-1 border bg-neutral-50 text-center  hover:border-emerald-600 rounded-md cursor-pointer outline-none group-hover:bg-neutral-100 transition"
               />
 

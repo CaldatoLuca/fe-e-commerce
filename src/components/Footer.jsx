@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-neutral-800 text-neutral-100 py-10">
-      <div className="container pb-5 mx-auto px-5 flex justify-between border-b">
+      <div className="container text-center md:text-start pb-5 mx-auto px-5 flex flex-col md:flex-row items-center md:items-end justify-between border-b">
         {/* Links */}
         <div className="flex gap-28 ">
           {/* Account */}
@@ -30,15 +30,15 @@ function Footer() {
           <ul>
             <li className="text-xl font-bold mb-5 uppercase">Help</li>
             <li className="mb-1 hover:text-neutral-200 transition">
-              <Link to="/help">FAQ</Link>
+              <Link to="/contattaci">FAQ</Link>
             </li>
             <li className="hover:text-neutral-200 transition">
-              <Link to="/login">Contattaci</Link>
+              <Link to="/contattaci">Contattaci</Link>
             </li>
           </ul>
         </div>
 
-        <div className="flex items-end gap-3">
+        <div className="flex justify-center mt-5 md:mt-0  gap-3">
           <FaDiscord className="cursor-pointer" />
           <FaFacebook className="cursor-pointer" />
           <FaPinterest className="cursor-pointer" />

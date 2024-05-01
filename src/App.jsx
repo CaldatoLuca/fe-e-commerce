@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Partner from "./pages/Partner";
+import Contattaci from "./pages/Contattaci";
 
 function App() {
   return (
@@ -36,6 +37,15 @@ function App() {
             element={
               <>
                 <Header /> <Partner /> <Footer />
+              </>
+            }
+          />
+          {/* Contattaci */}
+          <Route
+            path="/contattaci"
+            element={
+              <>
+                <Header /> <Contattaci /> <Footer />
               </>
             }
           />
