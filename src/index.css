@@ -9,3 +9,7 @@ body {
 .product-card {
   width: 450px;
 }
+
+.page-h {
+  height: calc(100vh - 404.5001px);
+}
