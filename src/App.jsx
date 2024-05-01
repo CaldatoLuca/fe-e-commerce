@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Partner from "./pages/Partner";
 import Contattaci from "./pages/Contattaci";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -51,7 +52,14 @@ function App() {
           />
           {/* Login */}
           <Route path="/login" element={<Login />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route
+            path="*"
+            element={
+              <>
+                <Header /> <NotFound /> <Footer />
+              </>
+            }
+          />
         </Routes>
       </Router>
     </>

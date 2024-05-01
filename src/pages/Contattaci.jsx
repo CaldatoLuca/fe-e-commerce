@@ -4,7 +4,7 @@ import { FaX } from "react-icons/fa6";
 function Contattaci() {
   return (
     <main className="mt-36">
-      <section id="partner" className=" bg-green-600 text-neutral-100">
+      <section id="contattaci" className=" bg-green-600 text-neutral-100">
         <div className="container mx-auto px-5 py-28 flex flex-col md:flex-row gap-10 justify-between items-center">
           {/* Form */}
           <div className="w-full text-center md:text-start md:w-1/2">
